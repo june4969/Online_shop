@@ -42,6 +42,15 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     'shop',
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.naver',
+    'cart',
+    'coupon',
+    'order',
+
 
 ]
 
@@ -127,7 +136,8 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'), ]
-STATICFILES_DIRS = [BASE_DIR / 'static']
+
+STATICFILES_DIRS = [BASE_DIR/'static']
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static_files')
 STATIC_ROOT=BASE_DIR / 'static_files'
 
@@ -147,3 +157,14 @@ pymysql.install_as_MySQLdb()
 
 
 
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+    'allauth.account.auth_backends.AuthenticationBackend',
+)
+SITE_ID = 1
+LOGIN_REDIRECT_URL = '/'
+
+CART_ID = 'cart_in_session'
+
+IAMPORT_KEY = '2510154630213431' # portone에서 발급받은 본인의 REST API 키 입력
+IAMPORT_SECRET = 'QViYXfJfskW9hJPhs4tJ3LYwFc9GVtoBmlXGIIgGkUIzUQOO4OmaW0z9YSsQ735U5hPfRmWZNuv1ZDkG' # portone에서 발급받은 본인의 REST API Secret 입력
