@@ -172,8 +172,7 @@ IAMPORT_SECRET = 'QViYXfJfskW9hJPhs4tJ3LYwFc9GVtoBmlXGIIgGkUIzUQOO4OmaW0z9YSsQ73
 
 
 DEBUG = False
-ALLOWED_HOSTS = ['*']
 
 
 
-ALLOWED_HOSTS = ['pythonanywhere.com']
+ALLOWED_HOSTS = ['0.0.0.0:8000', 'localhost', '127.0.0.1' ]
