@@ -176,4 +176,4 @@ ALLOWED_HOSTS = ['*']
 
 
 
-ALLOWED_HOSTS = ['mining.pythonanywhere.com']
+ALLOWED_HOSTS = ['pythonanywhere.com']
