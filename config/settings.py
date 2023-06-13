@@ -169,3 +169,11 @@ CART_ID = 'cart_in_session'
 
 IAMPORT_KEY = '2510154630213431' # portone에서 발급받은 본인의 REST API 키 입력
 IAMPORT_SECRET = 'QViYXfJfskW9hJPhs4tJ3LYwFc9GVtoBmlXGIIgGkUIzUQOO4OmaW0z9YSsQ735U5hPfRmWZNuv1ZDkG' # portone에서 발급받은 본인의 REST API Secret 입력
+
+
+DEBUG = False
+ALLOWED_HOSTS = ['*']
+
+
+
+ALLOWED_HOSTS = ['mining.pythonanywhere.com']
